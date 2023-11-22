@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 태그 연습</title>
+</head>
+<body>
+    <!-- 테이블 요소 태그 -->
+    <table border="1">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 1</td>
+        </tr>
+        <tr>
+            <td>Data 2</td>
+            <td>Data 2</td>
+        </tr>
+    </table>
+    <hr />
+    <!-- 태이블 내부에 넣을 수 있는 태그 -->
+    <table border="1">
+        <caption>Caption</caption>
+        <colgroup>
+            <col span="2" style="background: red" />
+            <col style="background: blue" />
+        </colgroup>
+        <thead style="background: green">
+            <tr>
+                <th>Table Header</th>
+                <th>Table Header</th>
+                <th>Table Header</th>
+            </tr>
+        </thead>
+            <tr>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+            </tr>
+            <tr>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+            </tr>
+            <tr>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+            </tr>
+        <tfoot style="background: yellow">
+            <tr>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr />
+    <!-- 테이블 태그의 속성 -->
+    <table border="1">
+        <tr>
+            <th colspan="3">Table Data</th>
+            <th rowspan="3">Table Data</th>
+        </tr>
+        <tr>
+            <td>Table Data</td>
+            <td rowspan="2">Table Data</td>
+            <td>Table Data</td>
+        </tr>
+        <tr>
+            <td>Table Data</td>
+            <td>Table Data</td>
+        </tr>
+    </table>
+    <hr />
+    <!-- 연습) 시간표 만들어보기 -->
+    <table border="1">
+        <caption>시간표</caption>
+        <tr>
+            <th>구분</th>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th colspan="2">금</th>
+        </tr>
+        <tr>
+            <th>1교시</th>
+            <td rowspan="2">자바 스크립트</td>
+            <td rowspan="2">자바 스크립트</td>
+            <td rowspan="2">자바 스크립트</td>
+            <td rowspan="2">자바 스크립트</td>
+            <td rowspan="2">UI</td>
+        </tr>
+        <tr>
+            <th>2교시</th>
+        </tr>
+        <tr>
+            <th>3교시</th>
+            <td colspan="10">점심</td>
+        </tr>
+        <tr>
+            <th>4교시</th>
+            <td rowspan="2">HTML</td>
+            <td rowspan="2">HTML</td>
+            <td rowspan="2">HTML</td>
+            <td rowspan="2">HTML</td>
+            <td rowspan="2">UX</td>
+        </tr>
+        <tr>
+            <th>5교시</th>
+        </tr>
+    </table>
+</body>
+</html>
