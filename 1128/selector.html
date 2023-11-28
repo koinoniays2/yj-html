@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS 적용 방법 1.임베딩 방식(Embedding) -->
+    <style>
+        /* 선택자 {속성:속성값; 속성:속성값;} */
+        --*{ color:red; } /* 전체 선택자 */
+        --p { color: aqua; } /* 태그 선택자 */
+        
+    </style>
+    <!-- CSS 적용 방법 1.임포팅 방식(Importing) -->
+    <link href="./css/selector.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!-- <h1>Lorem ipsum</h1>
+    <p class="p1-class" id="p1-id">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolor aliquid ut nihil eaque dicta perspiciatis iste voluptatum consectetur, recusandae amet iure itaque omnis sed unde nesciunt libero? Ab, consequuntur.</p>
+    <p class="p1-class">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci harum animi pariatur dolore exercitationem voluptatum sapiente quam numquam, quaerat ad totam aspernatur, molestias nisi nemo perferendis error dolorem aperiam possimus.</p>
+    <p style="color: coral;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, nisi amet culpa eum deleniti magnam explicabo aspernatur ratione omnis saepe sint distinctio cumque sequi ipsa perferendis, excepturi vero voluptatem quae?</p>
+    <h2>Lorem ipsum</h2>
+    <h3>Lorem ipsum</h3>
+    <h4>Lorem ipsum</h4>
+    <h5>Lorem ipsum</h5> -->
+
+    <!-- 기본 속성 선택자 -->
+    <h3>CSS3 Selector 기본 속성 선택자</h3>
+    <from>
+        <input type="text" />
+        <input type="password" />
+    </from>
+    <hr />
+
+    <!-- 문자열 속성 선택자 -->
+    <h3>CSS3 Selector 문자열 속성 선택자 $=</h3>
+    <button value="jajq-png">$=</button>
+    <button value="node-jpg">$=</button>
+    <button value="ux-gif">$=</button>
+    <hr />
+
+    <!-- 후손 선택자와 자손 선택자 -->
+    <h3>CSS3 Selector 후손 선택자</h3>
+    <div id="header">
+        <h4 class="title">Lorem ipsum</h4>
+        <div id="nav">
+            <h4>Navigation</h4>
+        </div>
+    </div>
+    <div id="section">
+        <h4 class="title">Lorem ipsum</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo animi magnam rem perferendis, consectetur, nesciunt voluptate error commodi velit temporibus non, magni officia recusandae nihil aperiam doloribus nemo fugit nam!
+        Quos dolores, cupiditate, vitae laudantium repudiandae neque in illum unde ad sequi ratione ipsa laborum quam? Eos non commodi odio, quidem vero qui temporibus doloremque aut, rem tenetur minima veniam!
+        Harum voluptates et qui, aperiam maiores nemo explicabo impedit minima dicta neque sint maxime, eaque ducimus blanditiis unde. Accusamus exercitationem repudiandae quo, labore non quasi. Odit tempore exercitationem quod aut!
+        Ut atque autem reiciendis. Laudantium ducimus necessitatibus dolores iste reprehenderit aliquam explicabo corporis vero molestias, totam voluptatum alias saepe, rem incidunt aut itaque id! Reprehenderit eaque sapiente optio exercitationem ducimus?</p>
+    </div>
+    <hr />
+    <h3>CSS3 Selector 자손 선택자</h3>
+    <div id="header2">
+        <h4 class="title2">Lorem ipsum</h4>
+        <div id="nav2">
+            <h4>Navigation</h4>
+        </div>
+    </div>
+    <div id="section2">
+        <h4 class="title2">Lorem ipsum</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum ab eum dolor accusantium blanditiis natus dolores, voluptas reprehenderit in nostrum! Voluptates aliquam dignissimos magni eum quas quis autem, atque cupiditate!
+        Facere repellat laborum eius culpa voluptatibus sint dolores cumque, voluptatum accusamus sed dolore, aliquid illo. Quia enim ut incidunt repellendus excepturi maxime delectus, porro aut, quae corrupti vitae, numquam architecto!
+        Aliquid, amet. Dicta quam voluptates repudiandae explicabo aliquam aliquid quod facere quidem ab. Natus alias fugit accusantium nobis repellendus sed accusamus, facilis totam quos assumenda quis, sint rem unde illum.
+        Cum delectus, quisquam non mollitia illo ipsum iste nisi perspiciatis dolorum natus. Animi, accusantium, alias eos nisi maiores in soluta ad cumque saepe illum accusamus nesciunt nulla labore illo fugit!</p>
+    </div>
+    <hr />
+
+    <!-- 동위 선택자 -->
+    <div class="box">
+        <h3>CSS3 Selector 동위 선택자</h3>
+        <h1>Header - 1</h1>
+        <h2>Header - 2</h2>
+        <h2>Header - 2</h2>
+        <h2>Header - 2</h2>
+        <h2>Header - 2</h2>
+    </div>
+    <hr />
+
+    <!-- 반응 선택자 -->
+    <div class="box1">
+        <h3>CSS3 Selector 반응 선택자</h3>
+        <h4>User Action Selector</h4>
+    </div>
+    <hr />
+
+    <!-- 상태 선택자 -->
+    <h3>CSS3 Selector 상태 선택자</h3>
+    <h4>Enable</h4>
+    <input />
+    <h4>Disable</h4>
+    <input disabled="disabled" />
+    <hr />
+
+    <!-- 상태 선택자와 동위 선택자의 복합 활용  -->
+    <h3>CSS3 Selector 상태 선택자와 동위 선택자의 복합 활용</h3>
+    <input type="checkbox" />
+    <div class="transition">
+        <h4>Lorem ipsum</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo beatae, perferendis minus exercitationem pariatur ea voluptas numquam mollitia non at deserunt adipisci itaque cumque expedita distinctio quam facilis? Sapiente, laudantium?</p>
+    </div>
+    <hr />
+
+    <!-- 구조 선택자 -->
+    <h3>CSS3 Selector 구조 선택자</h3>
+    <ul>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+        <li>Fourth</li>
+        <li>Fifth</li>
+        <li>Sixth</li>
+        <li>Seventh</li>
+    </ul>
+    <hr />
+    
+    <!-- 형태 구조 선택자 -->
+    <div class="box2">
+        <p>CSS3 Selector 형태 구조 선택자</p>
+        <h1>Header - 1</h1>
+        <h2>Header - 2</h2>
+        <h3>Header - 3</h3>
+        <h3>Header - 3</h3>
+        <h2>Header - 2</h3>
+        <h1>Header - 1</h3>
+    </div>
+    <hr />
+    <!-- 형태 구조 선택자2 -->
+    <div class="box3">
+        <h1>Hearder - 1</h1>
+        <h2>Hearder - 2</h2>
+        <h3>Hearder - 3</h3>
+        <h4>Hearder - 4</h4>
+        <h5>Hearder - 5</h5>
+        <h6>Hearder - 6</h6>
+    </div>
+    <hr />
+
+    <!-- 문자 선택자 -->
+    <h3>CSS3 Selector 문자 선택자</h3>
+    <div class="box4">
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, praesentium necessitatibus exercitationem assumenda nulla qui vero nihil commodi expedita consequatur cumque recusandae saepe tempora quam incidunt asperiores dignissimos nisi possimus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, error? Blanditiis ullam quam est natus quas iure recusandae sint eum, culpa, repellat, at maxime dignissimos alias quasi voluptas eligendi perspiciatis.</p>
+    </div>
+    <hr />
+
+    <!-- 반응 문자 선택자 -->
+    <h3>CSS3 Selector 반응 문자 선택자(드래그)</h3>
+    <div class="box5">
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <hr />
+
+    <!-- 링크 선택자 -->
+    <h3>CSS3 Selector 링크 선택자</h3>
+    <div class="box6">
+        <h1><a>Nothing</a></h1>
+        <h1><a href="http://hanbit.co.kr">Hanbit Media</a></h1>
+        <h1><a href="http://github.com">Github</a></h1>
+    </div>
+    <hr />
+
+    <!-- 부정 선택자 -->
+    <h3>CSS3 Selector 부정 선택자</h3>
+    <div class="box7">
+        <input type="password" />
+        <input type="text" />
+        <input type="password" />
+        <input type="text" />
+    </div>
+
+
+</body>
+</html>
