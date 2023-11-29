@@ -1,0 +1,45 @@
+/* 폰트 크기 단위 %, em, px*/
+.font-unit1 p:nth-child(2) { font-size: 100%; }
+.font-unit1 p:nth-child(3) { font-size: 150%; }
+.font-unit1 p:nth-child(4) { font-size: 200%; }
+
+.font-unit2 p:nth-child(2) { font-size: 1em; }
+.font-unit2 p:nth-child(3) { font-size: 1.5em; }
+.font-unit2 p:nth-child(4) { font-size: 2em; }
+
+.font-unit3 p:nth-child(2) { font-size: 16px; }
+.font-unit3 p:nth-child(3) { font-size: 24px; }
+.font-unit3 p:nth-child(4) { font-size: 32px; }
+
+/* URL 단위 */
+.image-unit {
+    width: 500px;
+    height: 500px;
+    background-image: url(images/coffee.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.box1 {
+    width: 100px; height: 100px;
+    background-color: lightsalmon;
+    border: 20px solid black;
+    margin: 0 30px; padding: 0 30px;
+    /* 위아래0 왼오30   위아래0 왼오30 */
+}
+
+.box {
+    margin: 10px; padding: 10px;
+    width: 100px; height: 100px;
+    border: 10px solid black;
+}
+.box2 {
+    background-color: red;
+    box-sizing: content-box;
+}
+
+.box3 {
+    background-color: orange;
+    box-sizing: border-box;
+}
