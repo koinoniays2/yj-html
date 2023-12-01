@@ -1,0 +1,16 @@
+body {
+    background-color: black;
+    background-image: url(images/3.png);
+    color: aliceblue;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+/* div{
+    height: 300px;
+    width: 300px;
+}
+.img1 { background-image: url(images/1.jpg); background-repeat: no-repeat; 
+background-size: 100%;}
+.img2 { background-image: url(images/2.gif); }
+.img3 { background-image: url(images/3.png); } */

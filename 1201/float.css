@@ -1,0 +1,56 @@
+/* body {
+    width: 1000px;
+    margin: 0 auto;
+    border: 1px solid black;
+} */
+
+/* overflow: hidden 사용------------------------------------------------------ */
+/*
+#aside {
+    width: 200px;
+    float: left;
+}
+
+#section {
+    width: 760px;
+    float: left;
+}
+
+#wrap {
+    overflow: hidden;
+}
+
+#footer {
+    border: 1px solid black;
+} */
+
+/* clear 사용------------------------------------------------------ */
+/* .clear {
+    clear:both;
+}
+
+#aside {
+    width: 260px;
+    float: left;
+}
+#section {
+    width: 700px;
+    float: left;
+}
+
+h1 {
+    text-shadow: 5px 5px 5px pink;
+}
+div {
+    border: 3px solid black;
+    box-shadow: 10px 10px 30px lightblue;
+    text-shadow: 5px 5px 5px lightgrey;
+} */
+
+/*
+div {
+     Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b3dced+0,29b8e5+50,bce0ee+100;Blue+Pipe
+    background: linear-gradient(to bottom,  rgba(179,220,237,1) 0%,rgba(41,184,229,1) 50%,rgba(188,224,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+
+}
+*/
