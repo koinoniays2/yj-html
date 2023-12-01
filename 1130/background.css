@@ -1,0 +1,62 @@
+*{ margin: 0; padding: 0; }
+body {
+    /* background-image: url("./image/coffee.jpg"); */
+    background-image: url("./image/coffee2.jpg"), url("./image/coffee.jpg");
+    background-size: 20% 100%, cover; /* 1번째이미지 너비 높이, 2번째이미지 너비 높이*/
+    background-repeat: no-repeat; /* no반복 */
+    background-attachment: fixed; /* 배경이미지 고정 */
+    background-position: right;
+}
+
+.a { 
+    font-size: 32px;
+    font-family: Arial;
+}
+.b { 
+    font-size: 2em;
+    font-family: 'Times New Roman';
+}
+.c { font-size: large; } /* 기본 글꼴 크기의 1.2배 */
+.d { font-size: small; } /* 기본 글꼴 크기의 0.8배 */
+
+/* 포지션 속성 */
+.container1 {
+    border: 1px solid black; 
+    /* 자식의 position이 absolute일 경우 부모에게서 빠지고
+    페이지 내에서 절대 위치를 갖는다. 부모를 보려면 높이,너비를 지정해줘야함*/
+    width: 100px;
+    height: 300px;
+    position: relative;
+    /* 부모에게 realtive를 설정하면 위치가 부모로부터 시작한다. */
+    /* overflow: hidden; 부모의 영역을 벗어난 부분은 숨겨짐 */
+    overflow: scroll;
+}
+.box {
+    width: 100px; height: 100px;
+    position: absolute;
+}
+    /* z-index 위로 올라오는 순서 변경 */
+    .red {
+        background-color: red; 
+        left: 10px; top: 10px;
+        z-index: 100;
+    }
+    .green { 
+        background-color: green;
+        left: 50px; top: 50px;
+        z-index: 10;
+    }
+    .blue {
+        background-color: blue; 
+        left: 90px; top: 90px;
+        z-index: 1;
+}
+
+/* float 속성 */
+.box1 {
+    width: 100px; height: 100px;
+    background-color: red;
+    margin: 10px; padding: 10px;
+
+    float: left;
+}
