@@ -1,0 +1,56 @@
+header {
+    background-color: gray;
+    overflow: hidden; /* float로 자식이 벗어나면 부모의 높이가 사라지지 않도록 함 */
+}
+header ul li {
+    float: left; /* float는 부모를 벗어남 */
+    /* display: inline-block; */
+    list-style: none;
+    padding: 10px;
+}
+/* .line {
+    clear:both; 
+    float밑에 선을 만듬 그래도 header는 안나옴
+} */
+#wrapper {
+    width: 500px; height: 500px;
+    background-color: gray;
+    margin: 0   auto;
+    position: relative;
+}
+.box {
+    width: 100px; height: 100px;
+    position: absolute;
+}
+.red { background-color: red; }
+.red:hover {
+    z-index: 100;
+}
+.green { 
+    background-color: green;
+    left: 10px; top: 10px;
+}
+.blue { background-color: blue;
+    left: 20px; top: 20px;
+}
+#textbox{
+    width: 500px; height: 200px;
+    border: 1px solid;
+    overflow : scroll;
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+}
+div {
+    width: 500px; height: 60px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 60px;
+}
+/* div:nth-child(1) {background-color: red;}
+div:nth-child(2) {background: linear-gradient(red, yellow);}
+div:nth-child(3) {background: linear-gradient(to right, red, blue, yellow);}
+div:nth-child(4) {background: linear-gradient(45deg, red, blue, yellow);} 각도
+div:nth-child(5) {background: linear-gradient(red,blue,green,yellow);}
+div:nth-child(6) {background: radial-gradient(red,blue,green,yellow);}
+div:nth-child(7) {background: conic-gradient(red,blue,green,yellow);} */
