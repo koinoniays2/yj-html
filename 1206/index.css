@@ -1,43 +1,93 @@
 /* ----------------------공통------------------------------- */
-*{ margin: 0; padding: 0; }
+*{ margin: 0; padding: 0; box-sizing: border-box;}
 body{ font-family: 'Cinzel Decorative', serif; 
-    background-color: #F6F6F6; color: #353535;}
-a{ text-decoration: none; color: #353535; display: block;}
+    background-color: #F6F6F6; color: #0F0F0F;}
+a{ text-decoration: none; color: #0F0F0F; display: block;}
 img{ border: 0; }
 ul{ overflow: hidden; }
 li{ list-style: none; float: left; }
 /* -----------------------header------------------------------ */
 #header {
-    height: 200px;
-    width: 1200px;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
+    width: 100%;
+    height: 500px;
+    background-image: url(images/배경2.jpg);
+    background-size: cover;
+    background-position: center 85%;
 }
-    #header>div {
-        position: absolute;
-        padding: 30px 0;
+    #header section {
+        height: 500px;
+        width: 1200px;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
     }
+        #header div a{
+            float: left;
+            padding: 30px 30px;
+            font-size: 2.5rem; font-weight: bold;
+        }
 /* -----------------------nav-lnb------------------------------ */    
-    #header>#lnb {
-        position: absolute;
-        bottom: 0;
+    #header #lnb {
+        float: left;
+        padding: 20px 30px;
     }
-        #header>#lnb>ul>li>a { 
-                font-size: 1.5rem; 
+        #header #lnb a { 
+                font-size: 1.5rem; font-weight: bold;
                 padding: 20px 0;
                 padding-right: 20px;
                 margin-right: 20px;
             }
 /* -----------------------nav-gnb------------------------------ */    
-    #header>#gnb {
+    #header #gnb {
         position: absolute;
         top: 0;
         right: 0;
     }
-        #header>#gnb>ul>li>a { 
-            font-size: 0.8rem; font-weight: bold;
-            padding: 30px 0;
-            padding-right: 30px;
-            margin-right: 10px;
+        #header #gnb a { 
+            font-size: 0.7rem; font-weight: bold;
+            padding: 30px 0; padding-right: 10px;
         }
+/* -----------------------main------------------------------ */
+#main-content {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+    #main-article {
+        width: 900px;
+    }
+        #main-article #single-malt {
+            float: left;
+            padding: 10px 10px;
+        }
+            #single-malt dl {
+                float: left;
+                height: 150px;
+                margin-left: 50px;
+            }
+                #single-malt dt {
+                    font-size: 1.2rem;
+                }
+                #single-malt dd {
+                    font-weight: bold;
+                }
+                #single-malt img {
+                    width: 250px;
+                    height: 300px;
+                    object-fit: cover;
+                    float: left;
+                    margin-top: 30px; margin-left: 10px;
+                    margin: 30px 10px 50px 0;
+                }
+#main-aside {
+    float: right;
+    width: 300px;
+    border: 1px solid black;
+}
+/* -----------------------footer------------------------------ */
+#footer {
+    width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
