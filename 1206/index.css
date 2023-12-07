@@ -6,6 +6,7 @@ a{ text-decoration: none; color: #0F0F0F; display: block;}
 img{ border: 0; }
 ul{ overflow: hidden; }
 li{ list-style: none; float: left; }
+dt, p{ font-family: 'Orbit', sans-serif; }
 /* -----------------------header------------------------------ */
 #header {
     width: 100%;
@@ -59,23 +60,26 @@ li{ list-style: none; float: left; }
         #main-article #single-malt {
             float: left;
             padding: 10px 10px;
+            margin-top: 20px;
         }
             #single-malt dl {
                 float: left;
                 height: 150px;
-                margin-left: 50px;
+                margin-left: 60px;
             }
                 #single-malt dt {
                     font-size: 1.2rem;
+                    margin-bottom: 10px;
                 }
                 #single-malt dd {
                     font-weight: bold;
                 }
                 #single-malt img {
-                    width: 250px;
+                    width: 280px;
                     height: 300px;
                     object-fit: cover;
                     float: left;
+                    
                     margin-top: 30px; margin-left: 10px;
                     margin: 30px 10px 50px 0;
                 }
