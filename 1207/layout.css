@@ -1,0 +1,144 @@
+/* --------------------공통----------------------------------- */
+*{ margin: 0; box-sizing: border-box; padding: 0;}
+header ul { overflow: hidden; }
+header li{ list-style: none; float: left;}
+a{ text-decoration: none; color: black;}
+/* --------------------header----------------------------------- */
+header {
+    background-color: gray;
+    width: 960px; height: 160px;
+    margin: 0 auto;
+    position: relative;
+}
+header #title{ 
+    background-color: #ddd;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+} 
+header #gnb{ 
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+header #gnb a {
+    display: block; 
+    /* a태그는 공간태그가 아니기때문에 li태그가 float, ul이 overflow:hidden일때
+    부모가 a의 크기를 컨텐트 크기만 잡기때문에 크기가 안보인다.
+    -> 블럭으로 만들어준다.*/
+    padding: 2px 10px;
+    background-color: white;
+    border: 1px solid black;
+}
+header #gnb a:hover {
+    background-color: black;
+    color: white;
+}
+header #gnb li:first-child>a{
+    border-radius: 10px 0 0 10px;
+}
+header #gnb li:last-child>a {
+    border-radius: 0 10px 10px 0;
+}
+
+header #lnb{ 
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+}
+header #lnb a {
+    display: block;
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid black;
+}
+header #lnb a:hover {
+    background-color: black;
+    color: white;
+}
+header #lnb li:first-child>a{
+    border-radius: 10px 0 0 10px;
+}
+header #lnb li:last-child>a {
+    border-radius: 0 10px 10px 0;
+}
+
+/* --------------------content----------------------------------- */
+#content {
+    background-color: lightblue;
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+    #content section {
+        width: 750px; float: left;
+        background-color: green;
+    }
+        #content section article {
+            border: 1px solid black;
+            padding: 20px; margin-bottom: 10px;
+        }
+/* --------------------aside----------------------------------- */
+    #content aside {
+        width: 200px; float: right;
+        background-color: rebeccapurple;
+    }   
+    /*  */
+        #content aside input { display: none; }
+        #content aside > div { display: none; }
+    /* radio 버튼이 체크 되었을때 */
+        #content aside input:nth-of-type(1):checked ~ div:nth-of-type(1) { display: block; }
+        #content aside input:nth-of-type(2):checked ~ div:nth-of-type(2) { display: block; }
+
+        aside section {
+            overflow: hidden;
+        }
+        section label {
+            width: 100px; height: 30px;
+            background-color: white;
+            display: block; float: left;
+            text-align: center;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+        #content aside input:nth-of-type(1):checked ~ section > label:nth-child(1) {
+            background-color: black;
+            color: white;
+        }
+        #content aside input:nth-of-type(2):checked ~ section > label:nth-child(2) {
+            background-color: black;
+            color: white;
+        }
+/* --------------------aside-tab-menu----------------------------------- */
+.item {
+    overflow: hidden;
+    padding: 10px;
+    border: 1px solid black;
+    border-top: none;
+}
+/* 탭 메뉴의 목록 스타일 */
+.thumbnail { background-color: blueviolet;
+    float: left; 
+}
+.description { background-color: cadetblue;
+    float: left;
+    margin-left: 10px;
+
+}
+.description > strong {
+    display: block;
+    width: 123px;
+    white-space: nowrap; /* 자동 줄바꿈 금지*/
+    overflow: hidden; /* 글자가 넘칠경우 숨김*/
+    text-overflow: ellipsis; /* 글 줄임표 ... 표시*/
+}
+
+/* --------------------footer----------------------------------- */
+footer {
+    background-color: lightslategray;
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2 0px;
+    box-sizing: border-box;
+}
