@@ -178,6 +178,7 @@ span { font-size: 0.9rem; font-weight: bold; color: #747474;}
 #main-aside {
     float: right;
     width: 300px;
+    margin-top: 10px;
 }
     #main-aside input {
         display: none;
@@ -217,7 +218,8 @@ span { font-size: 0.9rem; font-weight: bold; color: #747474;}
                 font-size: 0.8rem;
             }
 /* -----------------------aside-tab------------------------------ */
-#main-aside input { display: none; }
+label { cursor: pointer; }
+#main-aside input { display: none;}
 .tab1,.tab2 { display: none; }
 
 #main-aside input:first-child:checked ~ .tab > label:first-of-type{
@@ -239,7 +241,10 @@ span { font-size: 0.9rem; font-weight: bold; color: #747474;}
 /* -----------------------footer------------------------------ */
 #footer {
     width: 1200px;
-    height: 200px;
+    height: 100px;
     margin: 0 auto;
-    border: 1px solid black;
+    overflow: hidden;
 }
+    #footer>p {
+        line-height: 150px;
+    }
