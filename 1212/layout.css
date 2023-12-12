@@ -1,0 +1,95 @@
+* { margin: 0; padding: 0; }
+li { list-style: none; }
+a { text-decoration: none; }
+
+/* 헤더 */
+#main-header {
+    /* 배경 지정 */
+    height: 45px;
+    background: url('header_background.png');
+    /* 자손 위치 지정 */
+    position: relative;
+    text-align: center;
+    line-height: 45px;
+}
+#main-header > h1 {
+    color: white;
+}
+#main-header > a, #main-header > label {
+    display: block;
+    height: 32px;
+    position: absolute;
+}
+#main-header > a.left {
+    width: 62px; left: 5px; top: 7px;
+    background: url('sprites.png');
+    background-position: 0px 0px;
+    text-indent: -999px;
+}
+#main-header > label.right {
+    width: 32px; right: 5px; top: 7px;
+    background: url('sprites.png');
+    background-position: -62px 0px;
+    text-indent: -999px;
+}
+/* 토글목록 */
+#toggle { display: none; }
+#toggle + #wrap > #toggle-gnb-wrap { display: none; }
+#toggle:checked + #wrap > #toggle-gnb-wrap { display: block; }
+/* 레이아웃 색상 */
+#toggle-gnb-wrap {
+    background-color: #363636;
+    padding: 15px;
+}
+#toggle-gnb {
+    background-color: #fff;
+    padding: 5px;
+}
+/* 토글목록 */
+#toggle-gnb > ul { overflow: hidden; }
+#toggle-gnb > ul > li { width: 80px; float: left;}
+/* 네비게이션1 */
+#top-gnb { 
+    overflow: hidden;
+    border-bottom: 1px solid black;
+    background-color: #b42111;
+}
+#top-gnb > div > a {
+    float: left; width: 25%;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+}
+/* 네비게이션2 */
+#bottom-gnb {
+    display: table;
+    width: 100%;
+}
+#bottom-gnb > div {
+    display: table-cell;
+    position: relative;
+}
+#bottom-gnb > div > a {
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+#bottom-gnb > div > a::before {
+    display: block;
+    position: absolute;
+    top: 9px; left: -1px;
+    width: 1px; height: 15px;
+    border-left: 1px solid black;
+    content: '';
+}
+/* 본문 */
+#section-header { padding: 20px; }
+#section-article { padding: 10px; }
+/* 푸터 */
+#main-footer {
+    padding: 10px;
+    border-top: 3px solid black;
+    text-align: center;
+}

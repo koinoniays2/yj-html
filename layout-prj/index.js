@@ -1,10 +1,11 @@
 window.addEventListener("load", function () {
     
+    let aside = document.getElementById('main-aside');
+    let offsetTop = aside.parentElement.offsetTop;
+    
     // 스크롤 이벤트
     window.addEventListener('scroll', function () {
         // aside 고정
-        let aside = document.getElementById('main-aside');
-        let offsetTop = aside.parentElement.offsetTop;
         let left = aside.getBoundingClientRect().left;
         let right = aside.getBoundingClientRect().right;
         
@@ -50,11 +51,10 @@ window.addEventListener("load", function () {
                 cognacDiv[i].style.transition = "opacity 0.5s ease-out";
             }
         }
-    })
+    });
+
+    // 리사이즈 이벤트
     window.addEventListener('resize', function () {
-        let aside = document.getElementById('main-aside');
-        let offsetTop = aside.parentElement.offsetTop;
-      
         // 화면이 조절될 때, fixed 상태에서 해제
         // 다시 스크롤하면 나타남
         if (window.scrollY > offsetTop) {
