@@ -1,0 +1,66 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+li { list-style: none; }
+a { text-decoration: none; color: #212121 }
+i { color: #212121 }
+
+/* 헤더 */
+#header {
+    height: 7vh;
+}
+#menu ul {
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    #menu > ul > li > a {
+        display: block;
+    }
+    /* 토글 메뉴 i 왼쪽 정렬 */
+    #menu > ul > li:nth-child(1) {
+        display: flex; font-size: 1.5rem; 
+        justify-content: left; padding: 10px 10px;
+    }
+    /* 헤더 제목 중앙정렬 */
+    #menu > ul > li:nth-child(2) {
+        display: flex; 
+        justify-content: center;
+        font-size: 1.5rem; font-family: 'Cinzel', serif; font-weight: bold;
+        flex-grow: 1;
+    }
+    #menu > ul > li:nth-child(2) > a {
+        padding: 5px 10px;
+    }
+    /* SNS 오른쪽 정렬 */
+    #menu > ul > li:nth-child(3) {
+        display: flex;
+        justify-content: right;
+    }
+    #menu > ul > li:nth-child(3) > a:nth-child(1) > i {
+        font-size: 1.5rem; padding: 10px 10px 10px 10px;
+    }
+    #menu > ul > li:nth-child(3) > a:nth-child(2) > i {
+        font-size: 1.5rem; padding: 10px 20px 10px 5px;
+    }
+
+/*  */
+#section-1 {
+    height: 100vh;
+    width: 100vw;
+}
+.background {
+    height: inherit;
+    width: inherit;
+    margin-top: 10px;
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+}
+#section-2 {
+    height: 100vh;
+    width: 100vw;
+    background-color: #F6F6F6;
+}
