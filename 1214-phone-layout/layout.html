@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1214 스마트폰 레이아웃</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        li { list-style: none; }
+        a { text-decoration: none; }
+    </style>
+    <!-- wrap > 토글 메뉴 -->
+    <style>
+        #wrap #main-header {
+            background-image: url('./images/header_background.png');
+            text-align: center;
+            position: relative;
+
+        }
+        #main-header a, #main-header label {
+            display: block;
+            height: 32px;
+            position: absolute;
+        }
+        #main-header a {
+            width: 62px;
+            left: 5px; top: 7px;
+        }
+        #main-header label {
+            width: 32px;
+            right: 5px; top: 7px;
+        }
+    </style>
+    <!-- 스프라이트 이미지 -->
+    <style>
+    #main-header a {
+        background-image: url('./images/header_toggle.png');
+        text-indent: -99999px; 
+        /* 브라우저 바깥으로 글자 숨기기 */
+    }
+    #main-header label {
+        background-image: url('./images/header_toggle.png');
+        background-position: -62px 0;
+        text-indent: -99999px; 
+    }
+    /* 토글 메뉴 구현 */
+    #toggle { display: none; }
+    #toggle-gnb-wrap { display: none; }
+    #toggle:checked ~ #wrap > #toggle-gnb-wrap { display: block; }
+    /* 토글 레이아웃 색상 지정 */
+    #toggle-gnb-wrap { background-color: #363636; padding: 15px; }
+    #toggle-gnb { background-color: #fff; padding: 5px; }
+    #toggle-gnb ul { overflow: hidden; }
+    #toggle-gnb li { float: left; width: 12.5%; text-align: center; }
+    </style>
+    <!-- 네비게이션(1) -->
+    <style>
+        #top-gnb {
+            /* overflow: hidden; */
+            background-color: #b42111;
+        }
+        #top-gnb > div {
+            /* float: left; */
+            display: inline-block;
+            margin-left: -5px; /* inline-block은 사이에 margin이 생기기 때문에 마이너스로 margin을 준다.*/
+            width: 25%;
+            text-align: center;
+            height: 35px;
+            line-height: 35px;
+        }
+        #top-gnb > div > a {
+            display: block;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- 토글 메뉴 체크박스 -->
+    <input id="toggle" type="checkbox" />
+    <!-- wrap -->
+    <div id="wrap">
+        <header id="main-header">
+            <a class="left" href="#"></a>
+            <h1>Mobile</h1>
+            <label for="toggle"></label>
+        </header>
+        <!-- wrap > 토글 메뉴 -->
+        <header id="main-header"></header>
+        <!-- wrap > 토글 메뉴 클릭시 연동되는 풀다운메뉴 -->
+        <div id="toggle-gnb-wrap">
+            <div id="toggle-gnb">
+                <ul>
+                    <li><a href="">gnb버튼</a></li>
+                    <li><a href="">gnb버튼</a></li>
+                    <li><a href="">gnb버튼</a></li>
+                    <li><a href="">gnb버튼</a></li>
+                    <li><a href="">gnb버튼</a></li>
+                    <li><a href="">gnb버튼</a></li>
+                    <li><a href="">gnb버튼</a></li>
+                    <li><a href="">gnb버튼</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- wrap > 네비게이션(1) top_gnb버튼 -->
+        <nav id="top-gnb">
+            <div><a href="#">top버튼</a></div>
+            <div><a href="#">top버튼</a></div>
+            <div><a href="#">top버튼</a></div>
+            <div><a href="#">top버튼</a></div>
+        </nav>
+        <!-- wrap > 네비게이션(2) bottom_gnb버튼 -->
+        <nav id="bottom_gnb"></nav>
+        <!-- wrap > 섹션  -->
+        <section id="main-section"></section>
+        <!-- 푸터 -->
+        <footer id="main-footer"></footer>
+
+    </div>
+</body>
+</html>
