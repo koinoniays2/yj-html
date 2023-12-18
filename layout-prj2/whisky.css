@@ -2,10 +2,16 @@
 li { list-style: none; }
 a { text-decoration: none; color: #212121 }
 i { color: #212121 }
+#header, #img-container {
+    background-color: #F6F6F6;
+}
 
-/* 헤더 */
+/* ---헤더------------------------------ */
 #header {
     height: 7vh;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 #menu ul {
     height: 7vh;
@@ -17,34 +23,79 @@ i { color: #212121 }
         display: block;
     }
     /* 토글 메뉴 i 왼쪽 정렬 */
-    #menu > ul > li:nth-child(1) {
+    /* #menu > ul > li:nth-child(1) {
         display: flex; font-size: 1.5rem; 
         justify-content: left; padding: 10px 10px;
-    }
-    /* 헤더 제목 중앙정렬 */
-    #menu > ul > li:nth-child(2) {
+    } */
+
+    /* ---헤더 제목(왼쪽)------------------------------ */
+    #menu > ul > li:nth-child(1) {
         display: flex; 
-        justify-content: center;
+        justify-content: left;
         font-size: 1.5rem; font-family: 'Cinzel', serif; font-weight: bold;
         flex-grow: 1;
     }
-    #menu > ul > li:nth-child(2) > a {
-        padding: 5px 10px;
+    #menu > ul > li:nth-child(1) > a {
+        padding: 5px 10px 5px 20px;
     }
-    /* SNS 오른쪽 정렬 */
-    #menu > ul > li:nth-child(3) {
+    /* ---SNS 오른쪽 정렬------------------------------ */
+    #menu > ul > li:nth-child(2) {
         display: flex;
         justify-content: right;
     }
-    #menu > ul > li:nth-child(3) > a:nth-child(1) > i {
+    #menu > ul > li:nth-child(2) > a:nth-child(1) > i {
         font-size: 1.5rem; padding: 10px 10px 10px 10px;
     }
-    #menu > ul > li:nth-child(3) > a:nth-child(2) > i {
+    #menu > ul > li:nth-child(2) > a:nth-child(2) > i {
         font-size: 1.5rem; padding: 10px 20px 10px 5px;
     }
 
+/* ---내용(main)------------------------------ */
+#main-container {
+    height: 80vh; width: 100vw;
+    position: relative;
+}
+#main-container .back-img {
+    position: absolute;
+    top: 0; left: 0;
+    height: inherit; width: inherit;
+    background-image: url(images/back-img.webp);
+    background-attachment: fixed; background-repeat: no-repeat;
+    background-position: center center; background-size: cover;
+    overflow: hidden;
+    z-index: -1;
+}
+#main-content h1 {
+    color: #F6F6F6;
+}
+
+/* ---내용(image)------------------------------ */
+#img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+#img-container .back-img {
+    background-image: url(images/back-img.webp);
+    background-attachment: fixed; background-repeat: no-repeat;
+    background-position: center center; background-size: cover;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+}
+#img-container .img {
+    width: 90%; height: 200px;
+    margin-top: 30px;
+    overflow: hidden;
+    z-index: 99;
+}
+#img-container .img img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+}
 /*  */
-#section-1 {
+/* #section-1 {
     height: 100vh;
     width: 100vw;
 }
@@ -63,4 +114,4 @@ i { color: #212121 }
     height: 100vh;
     width: 100vw;
     background-color: #F6F6F6;
-}
+} */
